@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>INCAKE&nbsp;|&nbsp;购物车</title>
+	<link rel="stylesheet" href="/css/shop-cart.css">
+	<script type="text/javascript" src="/libs/require.js" data-main="/js/shop-cart.js"></script>
+	<script src="/libs/template-web.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header"></div>
+	<!--商品信息-->
+	<div class="container_wrap">
+		<div class="container">
+			
+		</div>
+	</div>
+	<!-- 尾部 -->
+	<div id="footer"></div>	
+</body>
+</html>
+<script type="text/html" id="list">
+	{{each data item index}}
+		<div class="title">
+			<h3>SHOPPING BASKET</h3>
+			<p>----购物篮----</p>
+		</div>
+		<div class="message">
+			<ul class="list">
+				<li>商品</li>
+				<li>数量</li>
+				<li>规格</li>
+				<li>单价</li>
+				<li>操作</li>
+			</ul>
+		</div>
+		<div class="goods">
+			<div class="goods_me">
+				<a href="javascript:;"><span class="yuan"></span></a>
+				<p class="pic"><span class="img"><a href="javascript:;"><img src={{item.src}} alt=""></a></span><span class="lemon">{{item.name}}<br><br>Fresh Lemon</span></span></p>
+					<a href="javascript:;">
+						<img src="/images/icon_sub_disabled.png" alt="" class="sub">
+						<input type="text" value="1">
+						<img src="/images/icon_add_enabled.png" alt="" class="add">
+					</a>
+				</p>
+				<p class="size"><span>{{item.cakeSize}}</span>磅</p>
+				<p class="price">￥<span>{{item.cakePrice}}</span></p>
+				<p class="remove"><a href="javascript">删除</a></p>
+			</div>
+		</div>
+		<div class="all">
+			<a href="javascript:;"><span class="s"></span></a>
+			<div class="right">
+				<p class="sp">已选<span>0</span>件商品<i>(不含运费)</i></p>
+				<p class="all_price">共<i>￥</i><span>156</span></p>
+				<p class="jiesuan"><a href="javascript:;">去结算</a></p>
+			</div>
+		</div>
+		<div class="can">
+			<p>餐盘和蜡烛</p>
+		</div>
+		<div class="bottom_wrap">
+			<ul>
+				<li>
+					<a href="javascript:;"><img src="/images/161-PC-L.jpg" alt=""></a>
+					<p>盘叉</p>
+					<p>cake plate</p>
+					<p>￥2.50s<span>/5份</span></p>
+					<span class="cart"><a href="javascript:;"><img src="/images/icon_join_basket_rect.png" alt=""></a></span>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="/images/candle_numbers.jpg" alt=""></a>
+					<p>数字蜡烛</p>
+					<p>number candle</p>
+					<p>￥2.00<span>/1份</span></p>
+					<span class="cart"><a href="javascript:;"><img src="/images/icon_join_basket_rect.png" alt=""></a></span>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="/images/candle_happybirthday.jpg" alt=""></a>
+					<p>I love you 蜡烛</p>
+					<p>i love you candle</p>
+					<p>￥8.00<span>/1份</span></p>
+					<span class="cart"><a href="javascript:;"><img src="/images/icon_join_basket_rect.png" alt=""></a></span>
+				</li>
+				<li>
+					<a href="javascript:;"><img src="/images/candle_iloveyou.jpg" alt=""></a>
+					<p>Happy Birthday 蜡烛</p>
+					<p>happy birthday candle</p>
+					<p>￥10.00<span>/1份</span></p>
+					<span class="cart"><a href="javascript:;"><img src="/images/icon_join_basket_rect.png" alt=""></a></span>
+				</li>
+			</ul>
+		</div>
+	{{/each}}
+</script>

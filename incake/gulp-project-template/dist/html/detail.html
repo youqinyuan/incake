@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>INCAKE&nbsp;|&nbsp;详情页</title>
+	<link rel="stylesheet" type="text/css" href="/css/detail.css">
+	<script type="text/javascript" src="/libs/require.js" data-main="/js/detail.js"></script>
+	<script src="/libs/template-web.js"></script>
+
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header"></div>
+	<!-- 商品展示 -->
+	<div class="exhibit_wrap">
+		<div class="share">
+			<p>手机下单及分享</p>
+			<div class="ma">
+				<img src="/images/021_10901.png" alt="">
+			</div>
+		</div>
+		<div class="exhibit">
+			
+	</div>
+	
+
+	<!-- 尾部 -->
+	<div id="footer"></div>
+</body>
+</html>
+<script type="text/html" id="list">
+	{{each data item index}}
+		<div class="top">
+			<div class="left">
+				<ul class="show">
+					<li class="cn"><img src={{item.cakeImg2}} alt=""></li>
+					<li><img src={{item.cakeImg3}} alt=""></li>
+					<li><img src={{item.cakeImg4}} alt=""></li>
+					<li><img src={{item.cakeImg5}} alt=""></li>
+				</ul>
+				<ul class="show_img">
+					<li class="en"><img src={{item.cakeImg2}} alt=""></li>
+					<li><img src={{item.cakeImg3}} alt=""></li>
+					<li><img src={{item.cakeImg4}} alt=""></li>
+					<li><img src={{item.cakeImg5}} alt=""></li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="title_wrap">
+					<p class="title"><span class="info">{{item.cakeName}}</span><span class="info1">{{item.cakeName1}}</span></p>
+					<p class="title1"><span>{{item.cakeInfo}}</span></p>
+				</div>
+				<div class="size_wrap">
+					<div class="title">规格:</div>
+					<div class="content">
+						<span class="cn">{{item.cakeSize}}磅</span>
+						<span>{{item.cakeSize1}}磅</span>
+						<span>{{item.cakeSize2}}磅</span>
+						<span>{{item.cakeSize3}}磅</span>
+					</div>
+				</div>
+				<div class="price_wrap">
+					<div class="title">款项:</div>
+					<ul class="jia">
+						<li class="ac"><span class="price">￥<i id="price">{{item.cakePrice}}</i></span><span class="name">常规款</span><span class="radio"></span></li>
+						<li><span class="price">￥<i id="price">{{item.cakePrice1}}</i></span><span class="name">常规款</span><span class="radio"></span></li>
+						<li><span class="price">￥<i id="price">{{item.cakePrice2}}</i></span><span class="name">常规款</span><span class="radio"></span></li>
+						<li><span class="price">￥<i id="price">{{item.cakePrice3}}</i></span><span class="name">常规款</span><span class="radio"></span></li>
+					</ul>
+				</div>
+				<div class="num">
+					<div class="title">数量:</div>
+					<div class="content">
+						<div class="jian">
+							<a href="javascript:;" class="j"><img src="/images/icon_sub_disabled.png" alt=""></a>
+							<input type="text" class="n">
+							
+							<a href="javascript:;" class="a" id="add"><img src="/images/icon_add_enabled.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="addon"></div>
+				<div class="operates">
+					<a href="javascript:;" class="favor">
+						<span class="img"></span>
+					</a>
+					<a href="/html/shop-cart.html" class="basket" id="basket">加入购物篮</a>
+					<a href="javascript:;" class="buy">立即购买</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="bottom_wrap">
+			<p class="title">商品详情</p>
+			<ul>
+				<li><img src={{item.cakeImg6}} alt=""></li>
+				<li><img src="/images/detail_b.jpg" alt=""></li>
+			</ul>
+		</div>
+	</div>
+
+
+	{{/each}}
+</script>

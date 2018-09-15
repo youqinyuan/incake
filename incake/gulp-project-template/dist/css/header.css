@@ -1,0 +1,114 @@
+/*header*/
+.header {
+  font-size: 14px;
+  width: 100%;
+  height: 100px;
+  background: #e9546b; }
+  .header .header_in {
+    width: 1203px;
+    height: 100px;
+    margin: 0 auto; }
+    .header .header_in .header_left {
+      width: 215px;
+      height: 100px;
+      float: left;
+      position: relative; }
+    .header .header_in .header_right {
+      width: 988px;
+      height: 100px;
+      float: right; }
+      .header .header_in .header_right .header_top {
+        height: 37px; }
+        .header .header_in .header_right .header_top div {
+          float: right;
+          width: 325px; }
+          .header .header_in .header_right .header_top div p {
+            float: left;
+            margin-top: 10px;
+            color: white; }
+          .header .header_in .header_right .header_top div .logo_in {
+            float: right;
+            color: white; }
+            .header .header_in .header_right .header_top div .logo_in li {
+              float: left;
+              margin-top: 10px;
+              padding-left: 35px;
+              height: 15px;
+              line-height: 15px; }
+              .header .header_in .header_right .header_top div .logo_in li a {
+                color: white; }
+            .header .header_in .header_right .header_top div .logo_in .border {
+              border-right: 1px solid white;
+              padding-right: 35px; }
+      .header .header_in .header_right .header_bottom .img_gif {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50px;
+        left: 542px; }
+      .header .header_in .header_right .header_bottom .list
+li {
+        float: left;
+        width: 90px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        margin: 20px 3px; }
+        .header .header_in .header_right .header_bottom .list
+li a {
+          color: white; }
+      .header .header_in .header_right .header_bottom .list li:hover {
+        outline: 1px solid white; }
+      .header .header_in .header_right .header_bottom .cart {
+        float: right;
+        position: relative; }
+        .header .header_in .header_right .header_bottom .cart li {
+          height: 15px;
+          text-align: center;
+          line-height: 15px;
+          width: 80px;
+          float: left;
+          margin: 20px 0;
+          border-left: 1px solid white; }
+          .header .header_in .header_right .header_bottom .cart li span {
+            display: inline-block;
+            text-align: center;
+            line-height: 15px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid white;
+            border-radius: 50%;
+            background: white;
+            color: #e9546b;
+            position: absolute;
+            top: 8px;
+            right: 100px; }
+        .header .header_in .header_right .header_bottom .cart .city {
+          border-right: 1px solid white; }
+          .header .header_in .header_right .header_bottom .cart .city a {
+            color: white; }
+
+.subnav {
+  background: #505050;
+  position: absolute;
+  top: 83px;
+  left: 385px;
+  width: 150px;
+  height: auto;
+  border: 1px solid white;
+  z-index: 80;
+  display: none; }
+  .subnav p {
+    padding-top: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid white; }
+    .subnav p a {
+      display: block;
+      width: 150px;
+      height: 30px; }
+
+.list .sub:hover .subnav {
+  display: block; }
+
+.subnav p:hover a {
+  background: #cdcdcd; }

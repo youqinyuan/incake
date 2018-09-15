@@ -1,0 +1,132 @@
+@import "reset";
+@import "header";
+@import "footer";
+
+/*container*/
+.container-wrap{
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+	.container{
+		width: 1067px;
+		height: 437px;
+		margin: 0 auto;
+		margin-top: 100px;
+		.left{
+			width: 577px;
+			height: 437px;
+			float: left;
+			border-right: 1px solid #cdcdcd;
+		}
+		.right{
+			width: 395px;
+			height: auto;
+			float: right;
+			.title{
+				font-size: 32px;
+				color: #cdcdcd;
+				width: 200px;
+				margin-left: 120px;
+			}
+			ul{
+				width: 392px;
+				li{
+					position: relative;
+				}
+				i{
+					color: red;
+					font-weight: bold;
+					position: absolute;
+					top: 70px;
+					left: 0;
+					display: none;
+				}
+				.y{
+					display: block;
+				}
+				input{
+					width: 390px;
+				    height: 50px;
+				    background-color: #fafafa;
+				    border: 1px solid #929eab;
+				    border-radius: 4px;
+				    margin-top: 18px;
+				    font-size: 18px;
+				    line-height: 50px;
+				    color: #505050;
+				    text-indent: 1em;
+				    outline: none;
+				}
+				.ureg{
+					float: left;
+				    width: 260px;
+				    margin-right: 8px;
+				}
+				.btn-reg{
+					float: right;
+				    display: block;
+				    width: 122px;
+				    height: 52px;
+				    background-color: #929eab;
+				    border-radius: 4px;
+				   	color: #45515f;
+				    font-size: 30px;
+				    font-weight: bold;
+				    line-height: 52px;
+				    font-style: italic;
+				    text-align: center;
+				    color: #45515f;
+				}
+				.other-option{
+					height: 5px;
+    				margin-left: 10px;
+    				.forget-pwd{
+    					float: right;
+					    margin-right: 10px;
+					    margin-top: 5px;
+					    text-align: right;
+					    font-size: 14px;
+					    color: #1478be;
+    				}
+    				.forget-pwd:hover{
+    					text-decoration: underline;
+						color: #f3a9b4;
+    				}
+				}
+				.btn-login{
+					display: block;
+				    width: 390px;
+				    height: 50px;
+				    background-color: #fff;
+				    border: 1px solid #45515e;
+				    border-radius: 4px;
+				    margin-top: 92px;
+				    font-size: 20px;
+				    line-height: 52px;
+				    color: #fff;
+				    background-color: #45515f;
+				    text-align: center;
+				}
+				.reg-tip {
+				    height: 10px;
+				    margin-left: 10px;
+				    font-size: 14px;
+				    line-height: 30px;
+				}
+				.mode-change{
+					height: 30px;
+				    margin-left: 10px;
+				    font-size: 14px;
+				    line-height: 30px;
+				    a{
+				    	color:#1478be;
+				    }
+				}
+				.btn-register:hover{
+					text-decoration: underline;
+					color: #f3a9b4;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>INCAKE&nbsp;|&nbsp;蛋糕馆</title>
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
+	<script type="text/javascript" src="/libs/require.js" data-main="/js/list.js"></script>
+	<script src="/libs/template-web.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header"></div>
+	<!-- section -->
+	<section>
+		<div class="container-top">
+			<div class="first-clearfix">
+				<p>
+					<span>商品：</span>
+					<a href="javascript:;">全部</a>
+					<a href="javascript:;">芝士系列</a>
+					<a href="javascript:;">巧克力系列</a>
+					<a href="javascript:;">拿破仑系列</a>
+					<a href="javascript:;">慕斯系列</a>
+					<a href="javascript:;">乳脂系列</a>
+					<a href="javascript:;">选拼系列</a>
+				</p>
+			</div>
+			<div class="clearfix">
+				<p>
+					<span>口味：</span>
+					<a href="javascript:;">拿破仑</a>
+					<a href="javascript:;">水果</a>
+					<a href="javascript:;">芝士</a>
+					<a href="javascript:;">巧克力</a>
+					<a href="javascript:;">慕斯</a>
+					<a href="javascript:;">咖啡</a>
+					<a href="javascript:;">鲜奶</a>
+					<a href="javascript:;">无糖</a>
+				</p>
+			</div>
+		</div>	
+	</section>
+	<div class="middle-wrap">
+		
+				
+				
+	</div>
+	<!-- 尾部 -->
+	<div id="footer"></div>
+</body>
+</html>
+<script type="text/html" id="list">
+	<div class="middle">
+		{{each data item index}}
+			<dl id="cake">
+				<dt><a href="/html/detail.html"><img src={{item.cakeImg1}} alt=""></a></dt>
+				<dd>
+					<div>
+						<a href="javascript:;">
+							<img src="/images/icon_join_basket_rect.png" alt="">
+						</a>
+					</div>
+					<p class="info">{{item.cakeInfo}}</p>
+					<p class="info-item">{{item.cakeName}}<span>{{item.cakeName1}}</span></p>
+					<p class="info-items">￥{{item.cakePrice}}<span>/{{item.cakeSize}}</span>磅</p>
+				</dd>
+			</dl>
+		{{/each}}
+	</div>	
+</script>
